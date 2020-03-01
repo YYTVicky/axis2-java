@@ -41,6 +41,8 @@ import javax.net.ssl.X509TrustManager;
  * </pre>
  * @see SSLProtocolSocketFactory
  */
+
+// This is not secure
 public class TrustAllTrustManager implements X509TrustManager {
     public java.security.cert.X509Certificate[] getAcceptedIssuers() {
         return null;
